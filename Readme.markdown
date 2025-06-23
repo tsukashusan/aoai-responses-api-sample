@@ -6,19 +6,16 @@
 ```
 git clone https://github.com/tsukashusan/aoai-responses-api-sample.git
 ```
-### Python 仮想環境をアクティベート
-virtualenv -p 3.11 .venv
 
-1. `_env`ファイルにある、`AZURE_OPENAI_ENDPOINT`と`TARGET_FILE_PATH`と`MODEL_NAME`を設定</br>
+### `_env`ファイルにある、`AZURE_OPENAI_ENDPOINT`と`TARGET_FILE_PATH`と`MODEL_NAME`を設定</br>
 ![CREATE_ENV](./docs/images/create-env-file.png "サンプル")
 
-1. `_env`ファイルのコピーし、`.env`ファイルとする</br>
+### `_env`ファイルのコピーし、`.env`ファイルとする</br>
 ![RENAME_ENV](./docs/images/copy-dot-env-file-1.png "サンプル")
+
 ![RENAME_ENV](./docs/images/copy-dot-env-file-2.png "サンプル")
 
-![RENAME_ENV](./docs/images/dot-env.png "サンプル")
-
-1. コマンドプロンプトで以下のコマンドを実行</br>
+### コマンドプロンプトで以下のコマンドを実行</br>
 ```posershell
 pip install -r requirements.txt
 ```
@@ -27,7 +24,7 @@ pip install -r requirements.txt
 
 ### az login の実行
 
- [!IMPORTANT]
+[!CAUTION]
  az cli が入っていない場合は次のサイトからダウンロード、インストール
 https://learn.microsoft.com/ja-jp/cli/azure/install-azure-cli?view=azure-cli-latest
 
