@@ -2,3 +2,4 @@ openai
 azure-identity
 ipykernel
 python-dotenv
+papermill[all]
