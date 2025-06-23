@@ -24,9 +24,9 @@ pip install -r requirements.txt
 
 ### az login の実行
 
-[!CAUTION]
- az cli が入っていない場合は次のサイトからダウンロード、インストール
-https://learn.microsoft.com/ja-jp/cli/azure/install-azure-cli?view=azure-cli-latest
+> [!CAUTION]
+> az cli が入っていない場合は次のサイトからダウンロード、インストール
+> https://learn.microsoft.com/ja-jp/cli/azure/install-azure-cli?view=azure-cli-latest
 
 ```
 az login --tenant <tenant id>
