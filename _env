@@ -1,4 +1,4 @@
 FILE_SUFFIX=jpg
-AZURE_OPENAI_ENDPOINT=
-TARGET_FILE_PATH=
-MODEL_NAME=
+AZURE_OPENAI_ENDPOINT=https://contso.cognitiveservices.azure.com
+TARGET_FILE_PATH=test.jpg
+MODEL_NAME=o3-pro
