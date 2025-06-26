@@ -1,3 +1,4 @@
 *.jpg
 .env
 execute.ipynb
+.venv

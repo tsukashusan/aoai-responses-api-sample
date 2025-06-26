@@ -3,15 +3,15 @@
 {
 	"name": "Azure OpenAI Sample Source",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/base:jammy",
+	"image": "mcr.microsoft.com/devcontainers/base:debian",
+	"runArgs": ["--platform=linux/amd64"],
 	"features": {
 		"ghcr.io/devcontainers/features/azure-cli:1": {},
 		"ghcr.io/azure/azure-dev/azd:0": {},
         "ghcr.io/devcontainers/features/python:1": {
             "version": "3.11",
             "toolsToInstall": [
-                "pip",
-                "pipx"
+                "pip"
             ]
         }
 	},
@@ -39,7 +39,9 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "pip install -r ./requirements.txt"
+	"onCreateCommand": "sudo sh -c \"echo 'nameserver 8.8.8.8' >> /etc/resolv.conf\"",
+	"postCreateCommand": "python -m venv .venv;./.venv/bin/pip install --upgrade pip;./.venv/bin/pip install -r ./requirements.txt",
+	"postStartCommand": ". ./.venv/bin/activate"
 	// Configure tool-specific properties.
 	// "customizations": {},
 
